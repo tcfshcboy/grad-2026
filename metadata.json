@@ -1,0 +1,8 @@
+{
+  "name": "TCFSH 青春留白集體補完計畫",
+  "description": "靠北版特別企劃，帶你一起回顧這三年的一中點滴。三個投稿專區與互動 Bingo，無論是黑歷史還是不敢說的秘密，都在這裡一次補完！",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
