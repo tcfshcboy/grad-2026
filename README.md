@@ -36,25 +36,3 @@
 * **動畫套件**：Motion (formerly Framer Motion)
 * **圖示資源**：Lucide React
 * **資料儲存欄**：透過 Google Apps Script (GAS) 串接 Google Sheets 及 Google Drive，進行文字與圖片的歸檔整理。
-
-### 本地開發環境設置
-
-1. 安裝依賴套件：
-   ```bash
-   npm install
-   ```
-2. 創建 `.env` 檔案（可參考 `.env.example`）：
-   ```env
-   VITE_GAS_WEB_APP_URL="你的_GAS_部署網址"
-   ```
-3. 啟動開發伺服器：
-   ```bash
-   npm run dev
-   ```
-
-## 部署與發布 (GitHub Actions)
-
-本專案支援透過 GitHub Actions 自動部署至 GitHub Pages。
-每當提交程式碼至 `main` 分支時，GitHub Actions 會自動執行編譯並將成品發布至 `gh-pages` 分支。
-
-**注意**：若是部署於非根目錄（如 `https://<username>.github.io/<repo>/`），請確保 `vite.config.ts` 中的 `base` 屬性設定為正確的存取路徑（例如：`'./'`）。
