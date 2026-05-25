@@ -33,9 +33,8 @@ jobs:
 
       - name: Build
         run: npm run build
-        # 如果你有設定 VITE_GAS_WEB_APP_URL，可以取消下方註解並設定 GitHub Secrets
-        # env:
-        #   VITE_GAS_WEB_APP_URL: ${{ secrets.VITE_GAS_WEB_APP_URL }}
+        env:
+          VITE_GAS_WEB_APP_URL: ${{ secrets.VITE_GAS_WEB_APP_URL }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
